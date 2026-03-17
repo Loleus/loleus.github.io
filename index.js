@@ -81,7 +81,7 @@ const canvas = document.getElementById("grid");
             centerX, centerY, squareSize
           );
           gradient.addColorStop(0, `rgba(55, 221, 180, ${cell.alpha})`);
-          gradient.addColorStop(1, `rgba(68, 189, 122, 0)`);
+          gradient.addColorStop(1, `rgba(68, 189, 122, 0.5)`);
 
           ctx.strokeStyle = gradient;
           ctx.lineWidth = 1.3;

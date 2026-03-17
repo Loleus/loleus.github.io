@@ -25,13 +25,13 @@ td {
   transition: all 0.24s linear;
 }
 tr:nth-child(n + 1) td:first-child {
-  background: rgb(231, 231, 231);
+  background: rgb(221, 221, 221);
 }
 td:hover {
     background: rgb(207, 207, 207);
 }
 tr th {
-  background: rgb(231, 231, 231);
+  background: rgb(221, 221, 221);
   overflow: hidden;
   color: rgb(120, 120, 120);
 }
@@ -42,8 +42,8 @@ h1 {
   color: #9b9b9b;
   line-height: 1em;
   font-size:1em;
-
-  background-image: linear-gradient(to left, rgba(0, 0, 0, 0), #ffffff 50%, rgba(0, 0, 0, 0));
+box-shadow: 0 0 1 tq2px 6px #c5c5c5 inset;
+  background-image: linear-gradient(to left, rgba(0, 0, 0, 0), rgb(221, 221, 221) 50%, rgba(0, 0, 0, 0));
   transition: color 0.24s linear;
 }
 td a {
