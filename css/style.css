@@ -20,8 +20,9 @@ html {
   height: 100%;
 }
 body {
-  background: rgb(42, 42, 43) url("../assets/bcg.jpg") center no-repeat;
-  background-size: 100% cover;
+  background: linear-gradient(to right, #c3dfdf, #c8dfd2, #cddfcd, #d2dfc8, #d7dfc3);
+  background-size: 100% auto;
+  overflow-y: auto;
 }
 
 @media only screen and (max-width: 1020px) {

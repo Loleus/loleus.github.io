@@ -11,64 +11,58 @@ table {
 }
 th,
 td {
-  padding: 5px 7px 10px;
-  text-shadow: 2px 2px 2px #272727;
+  padding: 5px 10px 8px;
   pointer-events: none;
   font-size: 0.6rem;
-  line-height: 0.9em;
-  border-radius: 0.5em;
-  color: #a5a5a5;
-  box-shadow: 0px 0px 3px 0px #b37e0e;
-  background: rgba(12, 75, 5, 0.377);
+  line-height: 1em;
+  border-radius: 0.2em;
+  color: #616161;
+  box-shadow: 0px 0px 3px 0px #ffffff;
+  background: rgba(217, 217, 217, 0.65);
   transition: all 0.24s linear;
 }
 tr:nth-child(n + 1) td:first-child {
-  background: #1118;
-  box-shadow: 0px 0px 3px 0px rgb(204, 11, 11);
+  background: rgba(255, 255, 255, 0.65);
+  box-shadow: 0px 0px 3px 0px rgb(194, 194, 194);
 }
 td:hover {
-  box-shadow: 0px 0px 3px 0px rgb(204, 11, 11);
+  box-shadow: 0px 0px 3px 0px rgba(194, 194, 194, 0);
+    background: rgb(198, 198, 198);
 }
 tr th {
-  background: hsla(0, 0%, 7%, 0.533);
+  background: rgba(255, 255, 255, 0.65);
   overflow: hidden;
-  color: rgb(165, 165, 165);
-  box-shadow: 0px 0px 3px 0px rgb(204, 11, 11);
+  color: rgb(97, 97, 97);
 }
 h1 {
   pointer-events: none;
   margin: 6vh 0;
   padding: 0.3em 0 0.5em;
-  color: #ffa70480;
+  color: #c0c0c0;
   line-height: 1em;
   font-size: 0.8em;
-  text-shadow: 1px 1px 2px #272727;
-  background-image: linear-gradient(to left, #fff0, #53360080 50%, #fff0);
-  box-shadow: 0px 0px 3px 0px #cc0b0b;
+  text-shadow: 1px 0px 2px #272727;
+  background-image: linear-gradient(to left, rgb(255, 255, 255), #ffffff00 50%, rgb(255, 255, 255));
   transition: color 0.24s linear;
 }
 h1:hover {
   color: #b99700;
 }
-h1 a {
-  pointer-events: auto;
-  text-decoration: none;
-  display: inline-block;
-  text-shadow: 1px 2px 1px #272727;
-  color: #d6b212;
-}
-h1 a:hover {
-  color: #96c42d;
-}
 td a {
+  display: block;
   pointer-events: auto;
-  font-weight: bold;
-  color: #cec6a5;
+  font-weight: normal;
+  color: #595959;
   font-size: 1.1em;
   text-underline-position: under;
   text-decoration: none;
+  text-shadow: 1px 0px 1px #565656;
   transition: color 0.17s linear;
+
+  width: 100%;
+  height: 100%;
 }
 td a:hover {
-  color: #eccb5c;
+  color: #a5a5a5;
+ text-shadow: 0;
 }
