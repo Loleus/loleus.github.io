@@ -19,11 +19,11 @@
 }
 
 html {
-  height: 100vh;
+  height: 100%;
 }
 
 body {
-  background: linear-gradient(to right, #c3dfdf, #c8dfd2, #cddfcd, #d2dfc8, #d7dfc3);
+  background: linear-gradient(to right, #cfdadf, #dfdcc8, #dddfcd, #d2dfc8, #dfe6fa);
   overflow-y: auto;
   overflow-x: hidden;
 }
@@ -37,7 +37,7 @@ canvas {
 
 @media only screen and (max-width: 1020px) {
   * {
-    font-size: 24px;
+    font-size: 28px;
   }
 
 }

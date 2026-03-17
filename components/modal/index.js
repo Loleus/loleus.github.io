@@ -51,7 +51,7 @@ export default class Modal extends HTMLElement {
       return `${yt}`
     }
     if (id == "photo") {
-      return `<my-photo></my-photo>`
+      return `${info}`
     }
   }
   getTemp(vis, id, text) {

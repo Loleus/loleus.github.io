@@ -1,11 +1,11 @@
 button {
-pointer-events: auto;
+  pointer-events: auto;
   border-radius: 0.5em;
   cursor: pointer;
-  font-size: 0.5em;
-  box-shadow: 0px 0px 3px -1px #000;
+  font-size: 0.5rem;
+  box-shadow: 0px 0px 4px 2px #c8c8c8 inset;
   border: none;
-  background: rgb(231, 231, 231);
+  background: rgb(243, 243, 243);
   padding: 5px 16px 7px;
   text-shadow: 0px 1px 1px #b5b5b5;
   color: rgb(120, 120, 120);
@@ -14,16 +14,18 @@ pointer-events: auto;
 }
 
 button:hover {
-  box-shadow: 0px 0px 3px -1px rgb(206, 206, 206);
+  box-shadow: 0px 0px 3px -1px #000;
   color: #505050;
   background: rgb(207, 207, 207);
 }
+
 @media only screen and (max-width: 1020px) {
   button {
-    display:block;
-    margin: 1em auto;
+    display: block;
+    margin: 0.5em auto;
   }
 }
+
 .container {
   pointer-events: auto;
   box-sizing: border-box;
@@ -37,29 +39,34 @@ button:hover {
   transform: translate(-50%, -50%);
   top: 50%;
   overflow: auto;
-  background: #5a2b045b;
+  background: #0000007a;
   font-size: 20px;
   cursor: pointer;
 }
+
 .container::after {
   border-radius: 1em;
   cursor: pointer;
   display: block;
   position: absolute;
   content: "X";
-  font-size: 4vh;
-  line-height: 5.2vh;
-  color: #a5a5a5;
-  width: 6vh;
-  height: 6vh;
+  padding: 0 0 2px 1px;
+  font-size: 1rem;
+  line-height: 1.1rem;
+  color: #aaaaaa;
+  width: 37px;
+  height: 37px;
   right: 1%;
   top: 1%;
-  background: #272727;
+  background: radial-gradient(at center, #fff, #ffffffa9);
+  box-shadow: 0px 0px 16px 0px #4444444b inset;
 }
+
 #sc-widget {
   width: 100%;
   height: 100vh;
 }
+
 .container .content {
   position: relative;
   display: flex;
@@ -67,11 +74,13 @@ button:hover {
   align-items: center;
   justify-content: center;
 }
+
 #player {
-  margin-top:12.5%;
+  margin-top: 12.5%;
 }
+
 .container .content p {
-  text-shadow: 2px 2px 0px #301e0c;
+  text-shadow: 0px 2px 4px #3a3a3a;
   text-indent: 1em;
   text-align: justify;
   text-justify: auto;
@@ -80,9 +89,10 @@ button:hover {
   margin: 0 auto;
   padding: 0.7em;
   padding-top: 0;
-  color: #ffedd8;
-  width:50%;
+  color: #d5e0e0;
+  width: 50%;
 }
+
 .container .content img {
   box-shadow: 1px 1px 3px 0 #181818;
   width: 260px;
@@ -102,9 +112,25 @@ button:hover {
     max-height: 100%;
     transform: translate(0, 0);
   }
+
   .container .content p {
     font-size: 1em;
-    line-height: 1.1em;
-    width:90%;
+    line-height: 1.2em;
+    width: 90%;
   }
-}      
+  .container::after {
+  border-radius: 1em;
+  cursor: pointer;
+  display: block;
+  position: absolute;
+  content: "X";
+  padding: 0 0 3px 1px;
+  font-size: 3vh;
+  line-height: 5vh;
+  color: #a5a5a500;
+  width: 5vh;
+  height: 5vh;
+  right: 2%;
+  top: 2%;
+}
+}
