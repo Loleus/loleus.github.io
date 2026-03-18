@@ -51,7 +51,7 @@ h1 {
   padding: 0.3em 0 0.5em;
   color: #888888;
   line-height: 1em;
-  font-size: 0.9rem;
+  font-size: 1rem;
   box-shadow: 0 0 14px 5px #cecece8d inset;
   background-image: linear-gradient(to left, rgba(0, 0, 0, 0), rgba(255, 255, 255, 0.805) 50%, rgba(0, 0, 0, 0)), linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.514) 50%, rgba(253, 253, 253, 0));
   transition: color 0.24s linear;
