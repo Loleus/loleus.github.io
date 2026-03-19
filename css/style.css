@@ -23,7 +23,7 @@ html {
 }
 
 body {
-  background: linear-gradient(to right, #cfdadf, #dfdcc8, #dddfcd, #d2dfc8, #dfe6fa);
+  background: linear-gradient(to right, #cfdadf, #dfdcc8, #dddfcd, #d1e9d8, #dfe6fa);
   overflow-y: auto;
   overflow-x: hidden;
 }
