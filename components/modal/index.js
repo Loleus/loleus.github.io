@@ -1,11 +1,11 @@
 let sc;
 let yt;
 let info;
-let photo;
+let pt;
 fetch("./components/modal/soundcloud/sc.html").then(stream => stream.text()).then(text => sc = text);
 fetch("./components/modal/youtube/yt.html").then(stream => stream.text()).then(text => yt = text);
 fetch("./components/modal/aboutMe/info.html").then(stream => stream.text()).then(text => info = text);
-fetch("./components/modal/photo/template.html").then(stream => stream.text()).then(text => photo = text);
+fetch("./components/modal/photo/pt.html").then(stream => stream.text()).then(text => pt = text);
 
 export default class Modal extends HTMLElement {
   static get observedAttributes() { return ["visibility", "label-text", "id"]; }
@@ -53,7 +53,7 @@ export default class Modal extends HTMLElement {
       return `${yt}`
     }
     if (id == "photo") {
-      return `${photo}`
+      return `${pt}`
     }
   }
   getTemp(vis, id, text) {
