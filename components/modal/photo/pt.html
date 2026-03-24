@@ -5,4 +5,34 @@
   frameborder="0"
   style="border:0; overflow:auto;height: 100vh">
 </iframe>
+<script>
+class PhotoRecord {
+  constructor({ id, title, createdAt, text, picId }) {
+    this.id = id;
+    this.title = title;
+    this.createdAt = createdAt;
+    this.text = text;
+    this.picId = picId;
+  }
+}
+async function getP() {
+  try {
+    const response = await fetch('photos.json');
+
+    if (!response.ok) {
+      throw new Error('Failed to fetch data');
+    }
+
+    const data = await response.json();
+    const dataMap = data.map(obj => new PhotoRecord(obj));
+
+    console.log(dataMap);
+
+  } catch (error) {
+    console.error('Error:', error);
+  }
+}
+
+getP();
+</script>
 
